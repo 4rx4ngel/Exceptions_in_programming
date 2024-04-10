@@ -12,7 +12,7 @@ public class Main {
         try {
             makeRecord();
         } catch (Exception e){
-            System.out.println(Arrays.toString(e.getStackTrace()));;
+            System.out.println(Arrays.toString(e.getStackTrace()));
             System.out.println(e.getMessage());
         }
 
@@ -28,7 +28,7 @@ public class Main {
         String name = array[1];
         String patronymic = array[2];
 
-        SimpleDateFormat format = new SimpleDateFormat("dd.mm.yyyy");
+        SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy");
         Date birthdate;
         try {
             birthdate = format.parse(array[3]);
